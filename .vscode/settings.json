@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "Final Project",
+            "connectString": "postgresql://wkktxpnw:fD4nzQ5UuGGyT4o--IvHWzgeeIj14Gdg@fanny.db.elephantsql.com/wkktxpnw",
+            "password": "fD4nzQ5UuGGyT4o--IvHWzgeeIj14Gdg",
+            "database": "wkktxpnw",
+            "username": "wkktxpnw"
+        }
+    ]
+}

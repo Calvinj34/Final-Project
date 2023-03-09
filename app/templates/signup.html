@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="row text-center my-5 text-white">
+    <h1>Sign up to create a custom workout program!</h1>
+    
+</div>
+<div class="row my-5 d-flex justify-content-center text-white">
+    <form method="POST" class="col-8">
+
+        {{ form.hidden_tag() }}
+
+        {{ form.username(class='form-control', placeholder = 'Username') }}
+        {{ form.name(class='form-control', placeholder = 'Name') }}
+        {{ form.email(class='form-control', placeholder = 'Email') }}
+        {{ form.password(class='form-control', placeholder = 'Password') }}
+        {{ form.confirm_password(class='form-control', placeholder = 'Confirm Password') }}
+
+        <div class="d-flex my-2 justify-content-center">
+            {{ form.submit(class='btn btn-white bg-body-secondary') }}
+        </div>
+
+    </form>
+</div>
+</div>
+
+{%endblock%}

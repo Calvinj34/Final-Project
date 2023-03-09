@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-xl ">
+    <div class="container-fluid bg-body-success">
+        <a class="navbar-brand" href="/program">
+            <img src="https://as2.ftcdn.net/v2/jpg/02/71/31/21/1000_F_271312111_jay3Or0kbVA1f7YIpB6O1eD2Y4d4tx9T.jpg"
+                alt="#" width="100" height="auto"></a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-blue" aria-current="page" href="/">Search</a> 
+                         <li class="nav-item">
+                        <a class="nav-link text-blue" href="/signup">Sign Up</a>
+                    </li>
+                    </li>
+                    {% if current_user.is_authenticated %}
+
+                    <li class="nav-item">
+                        <a class="nav-link text-blue" href="/program">{{current_user.username}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-blue" href="/logout">Log Out</a>
+                    </li>
+  
+                    {% else %}
+  
+                    <li class="nav-item">
+                        <a class="nav-link text-blue" href="/login">Log In</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+  </nav>
